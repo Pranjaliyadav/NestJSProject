@@ -11,8 +11,8 @@ app.use(express.static(path.join(path.resolve(), "public"))
 app.set("view engine", "ejs") //need to install ejs
 
 app.get("/", (req, res) => {
-  //  res.render("index", { name: "ABhishek" })
-  res.sendFile("index")
+   res.render("index", { name: "ABhishek" })
+ // res.sendFile("index")
 
 })
 
